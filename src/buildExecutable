@@ -1,0 +1,6 @@
+cd /
+cd /Users/saimahe/gitdemo1
+docker stop helloworld
+docker rm helloworld
+docker build -t hello-world  /Users/saimahe/gitdemo1
+docker run -d --name helloworld -p 90:80 /Users/saimahe/gitdemo1/src/:/var/www/html hello-world
