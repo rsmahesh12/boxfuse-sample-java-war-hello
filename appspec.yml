@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: boxfuse-sample-java-war-hello.war
+    destination: boxfuse-sample-java-war-hello/hello-1.0.war
+  
+hooks:
+  BeforeInstall:
+    - location: scripts/install.sh
+      timeout: 300
+  ApplicationStart:
+    - location: scripts/run.sh
+      timeout: 300
+  ValidateService:
