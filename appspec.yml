@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: boxfuse-sample-java-war-hello.war
+  - source: https://github.com/rsmahesh12/boxfuse-sample-java-war-hello.git
     destination: boxfuse-sample-java-war-hello/hello-1.0.war
   
 hooks:
