@@ -1,14 +1,8 @@
 version: 0.0
 os: linux
 files:
-  - source: https://github.com/rsmahesh12/boxfuse-sample-java-war-hello.git
+  - source: /opt/codedeploy-agent/boxfuse-sample-java-war-hello
     destination: boxfuse-sample-java-war-hello/hello-1.0.war
   
-hooks:
-  BeforeInstall:
-    - location: install.sh
-      timeout: 300
-  ApplicationStart:
-    - location: run.sh
-      timeout: 300
+
   
