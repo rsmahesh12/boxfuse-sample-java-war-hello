@@ -4,5 +4,9 @@ files:
   - source: /opt/codedeploy-agent/boxfuse-sample-java-war-hello
     destination: boxfuse-sample-java-war-hello/hello-1.0.war
   
+hooks:
+  BeforeInstall:
+    - location: scripts/install_dependencies
+      timeout: 300
 
   
