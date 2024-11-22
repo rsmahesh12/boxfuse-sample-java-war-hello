@@ -1,3 +1,3 @@
-FROM php:7.1-apache
+FROM php:7.4.33-apache
 COPY src/ var/www/html
 EXPOSE 8095
